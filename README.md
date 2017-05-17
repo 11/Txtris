@@ -8,7 +8,8 @@
 2. [Download ngrok](https://ngrok.com/download)
 3. Create a free [Twilio account](https://www.twilio.com/try-twilio)
 4. Run ngrok with `./ngrok http 8080`
-5. Configure twilio's SMS webhook within your twilio dashboard to be the generated ngrok forwarding address.
+5. Configure twilio's SMS webhook within your twilio dashboard to be the generated ngrok's forwarding address.
+
 Example: `<forwarding address>/sms` [(Link to tutorial)](https://www.twilio.com/blog/2017/03/building-python-web-apps-with-flask.html)
 6. In another terminal instance, run the python server with `python3 server.py` 
 7. Launch your emulator and Tetris rom file
