@@ -23,20 +23,24 @@ def handle_txt():
     
     message_body = request.form['Body'] 
    
-    #if 'a' or 'b'
+    #if 'a' or 'b' are preseed, make them uppercase so the emulator understands
     if len(message_body) == 1:
         message_body = message_body.upper()
+    
+    #else, make all other messages lowercase
     else:
         message_body = message_body.lower()
-
+    
+    #if what the user texted is in the list, write the input to buttons.txt
     if message_body in buttons:
         print(message_body)
         f = open('button.txt', 'w')
         f.write(str(message_body))
         f.close()
-
+    
+    #return an empty string (something must be returned on POST request)
     return ""
 
-#runs the program on my local machine 
+#runs the program on port 8080 on local machine 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port="8080")
