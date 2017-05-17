@@ -20,7 +20,3 @@
 1. <b>Linux:</b> [FCEUX](https://apps.ubuntu.com/cat/applications/oneiric/fceux/)
 2. <b>Windows:</b> [VisualBoyAdvance](https://sourceforge.net/projects/vbam/)
 3. <b>Mac:</b> [DeSmuME](http://desmume.org/)
-
----
-
-### Screenshots
